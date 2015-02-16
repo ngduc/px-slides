@@ -10,9 +10,11 @@
         <style>
         :host .container {
             position: relative;
+            width: 100%;
 
             border-radius: 10px;
             overflow: hidden;
+            margin: 0 auto;
         }
         :host .controls {
             width: 40px;
@@ -41,6 +43,7 @@
         }
         ::content img {
             position: absolute;
+            left: 0;
             top: 0;
             opacity: 0;
             width: 100%;
