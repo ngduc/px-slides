@@ -1,4 +1,4 @@
-# Polymer-Slideshow
+# Px-Slides
 
 A simple slideshow element built with [Polymer.js](http://www.polymer-project.org/).
 
@@ -14,13 +14,13 @@ You can see it in action [https://ipim.com](https://ipim.com)
 
 ### Usage
 
-Include the script and element template
+Include the element like below:
 
 	<script src="webcomponents.min.js"></script>
 	<script src="polymer.min.js"></script>
     <link rel="import" href="px-slides.html">
 
-Use the tag on your page
+Use the tag on your page:
 	
 	<px-slides>
       <img src="foo.jpg"/>
@@ -29,10 +29,10 @@ Use the tag on your page
     
 Optional attributes:
 	
-	width //sets the width
-	height //sets the height
-	auto //whether to trigger the slideshow
-	timer //interval at which to perform the slideshow
+	width   // sets the width
+	height  // sets the height
+	auto    // whether to trigger the slideshow
+	timer   // interval at which to perform the slideshow
 	
 
 
@@ -42,6 +42,7 @@ License
 [MIT License](http://www.opensource.org/licenses/mit-license.php)
 
 &copy; 2013 Kaizhi Wei &lt;hello@kaizhiwei.com&gt;
+&copy; 2015 Duc Nguyen &lt;ducjava@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
