@@ -1,3 +1,9 @@
+<!--
+Simple slideshow element built with polymer.js
+
+@element px-slides
+@demo http://ipim.com/demos/px-slides/index.html
+-->
 <polymer-element name="px-slides" attributes="width height auto timer">
     <template>
 
@@ -29,6 +35,13 @@
             opacity: 0;
             cursor: pointer;
             z-index: 100;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
         :host .controls:hover {
             opacity: 0.7;

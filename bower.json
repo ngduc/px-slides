@@ -1,6 +1,6 @@
 {
   "name": "px-slides",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/ngduc/px-slides",
   "authors": [
     "Duc Nguyen <ducjava@gmail.com>"
@@ -15,7 +15,8 @@
     "image",
     "polymer",
     "polymerjs",
-    "component"
+    "component",
+    "web-components"
   ],
   "license": "MIT",
   "ignore": [
