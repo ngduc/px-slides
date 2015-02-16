@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="polymer.min.js"></script>
-    <link rel="import" href="polymer-slideshow.html">
+    <script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="/bower_components/polymer/polymer.min.js"></script>
+    <link rel="import" href="px-slides.html">
+    <style>
+      body {
+        font-family: Tahoma;
+      }
+    </style>
   </head>
+
   <body>
-    <polymer-slideshow>
+    <h3>PX-SLIDES - A simple PolymerJS Slideshow Component</h3>
+    <p>
+      Demo: <a href="https://ipim.com" target="_blank">https://ipim.com</a>
+    </p>
+
+    <px-slides width="500" height="500" auto="true" timer="3000">
       <img src="http://lorempixel.com/500/500/sports/1"/>
       <img src="http://lorempixel.com/500/500/sports/2"/>
       <img src="http://lorempixel.com/500/500/sports/3"/>
-    </polymer-slideshow>
+    </px-slides>
 
   </body>
 </html>

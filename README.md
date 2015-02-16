@@ -2,26 +2,30 @@
 
 A simple slideshow element built with [Polymer.js](http://www.polymer-project.org/).
 
-### Compatibility Disclaimer
-This will probably only work on the latest/nightlies of major browsers. Please refer to the [polymer compatibility page](http://www.polymer-project.org/resources/compatibility.html) for more info.
+### Install
 
-### Example
+`
+$ bower install px-slides --save
+`
 
-You can see it in action [here](http://etc.kaizhiwei.com/polymer-slideshow/)
+### Demo
+
+You can see it in action [https://ipim.com](https://ipim.com)
 
 ### Usage
 
 Include the script and element template
 
+	<script src="webcomponents.min.js"></script>
 	<script src="polymer.min.js"></script>
-    <link rel="import" href="polymer-slideshow.html">
+    <link rel="import" href="px-slides.html">
 
 Use the tag on your page
 	
-	<polymer-slideshow>
+	<px-slides>
       <img src="foo.jpg"/>
       <img src="bar.jpg"/>
-    </polymer-slideshow>
+    </px-slides>
     
 Optional attributes:
 	

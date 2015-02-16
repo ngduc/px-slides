@@ -1,0 +1,32 @@
+{
+  "name": "px-slides",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ngduc/px-slides",
+  "authors": [
+    "Duc Nguyen <ducjava@gmail.com>"
+  ],
+  "description": "Slideshow element written in PolymerJS",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "slideshow",
+    "slide",
+    "image",
+    "polymer",
+    "polymerjs",
+    "component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.5.4",
+    "webcomponentsjs": "~0.5.4"
+  }
+}
