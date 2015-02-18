@@ -40,10 +40,11 @@ You can also set "lazy-src" for images to load them on demand: (to reduce page l
 
 Optional attributes for \<px-slides\> tag:
 	
-	width   // sets the width
-	height  // sets the height
-	auto    // whether to trigger the slideshow
-	timer   // interval at which to perform the slideshow
+	width      // sets the width
+	height     // sets the height
+	auto       // whether to trigger the slideshow, default: false
+	timer      // interval at which to perform the slideshow, default: 3s
+	lazyTimer  // delay for lazy loading images (must be less than 'timer'), default: 1s
 	
 
 

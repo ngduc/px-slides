@@ -4,7 +4,7 @@ Simple slideshow element built with polymer.js
 @element px-slides
 @demo http://ipim.com/demos/px-slides/index.html
 -->
-<polymer-element name="px-slides" attributes="width height auto timer">
+<polymer-element name="px-slides" attributes="width height auto timer lazyTimer">
     <template>
 
         <div class="container" style="width:{{width}}px; height:{{height}}px;">
@@ -79,6 +79,8 @@ Simple slideshow element built with polymer.js
         height: 350,
 
         ready: function() {
+            this.lazyTimer = this.lazyTimer || 1000;
+
             this.images = this.querySelectorAll( 'img' );
             if ( this.images.length > 0 ) {
                 this.showImage( this.images[0] );
@@ -93,7 +95,6 @@ Simple slideshow element built with polymer.js
                     }
                 })(this), timer);
             }
-
         },
         showImage: function( imgEl ) {
             imgEl.style.opacity = 1;
@@ -102,8 +103,10 @@ Simple slideshow element built with polymer.js
 
             var nextImg = imgEl.nextElementSibling;
             if ( nextImg ) {
-                lazySrc = nextImg.getAttribute('lazy-src');
-                if ( lazySrc ) nextImg.src = lazySrc;
+                setTimeout( function() {
+                    var lazySrc = nextImg.getAttribute('lazy-src');
+                    if ( lazySrc ) nextImg.src = lazySrc;
+                }, this.lazyTimer );
             }
         },
         onNextClicked: function( evt ) {
