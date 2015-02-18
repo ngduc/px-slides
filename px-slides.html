@@ -81,7 +81,7 @@ Simple slideshow element built with polymer.js
         ready: function() {
             this.images = this.querySelectorAll( 'img' );
             if ( this.images.length > 0 ) {
-                this.images[0].style.opacity = 1;
+                this.showImage( this.images[0] );
             }
 
             // start auto slideshow if element's auto attribute is true
@@ -95,14 +95,25 @@ Simple slideshow element built with polymer.js
             }
 
         },
+        showImage: function( imgEl ) {
+            imgEl.style.opacity = 1;
+            var lazySrc = imgEl.getAttribute('lazy-src');
+            if ( lazySrc ) imgEl.src = lazySrc;
+
+            var nextImg = imgEl.nextElementSibling;
+            if ( nextImg ) {
+                lazySrc = nextImg.getAttribute('lazy-src');
+                if ( lazySrc ) nextImg.src = lazySrc;
+            }
+        },
         onNextClicked: function( evt ) {
             this.images[this.currentImage].style.opacity = 0;
-            this.getNextImage().style.opacity = 1;
+            this.showImage( this.getNextImage() );
         },
 
         onPreviousClicked: function( evt ) {
             this.images[this.currentImage].style.opacity = 0;
-            this.getPreviousImage().style.opacity = 1;
+            this.showImage( this.getPreviousImage() );
         },
 
         getNextImage: function() {
