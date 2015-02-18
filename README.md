@@ -12,37 +12,33 @@ $ bower install px-slides --save
 
 You can see it in action [https://ipim.com](https://ipim.com)
 
+http://component.kitchen/components/ngduc/px-slides
+
 ### Usage
 
 Include the element like below:
 
-`
 	<script src="webcomponents.min.js"></script>
 	<script src="polymer.min.js"></script>
 
-    <link rel="import" href="px-slides.html">
-`
+	<link rel="import" href="px-slides.html">
 
 Use the tag on your page:
 
-`
 	<px-slides>
 		<img src="foo.jpg"/>
 		<img src="bar.jpg"/>
-    </px-slides>
-`
+	</px-slides>
 
 You can also set "lazy-src" for images to load them on demand: (to reduce page loading time)
 
-`
 	<px-slides>
 		<img lazy-src="foo.jpg"/>
 		<img lazy-src="bar.jpg"/>
 		<img lazy-src="baz.jpg"/>
-    </px-slides>
-`
+	</px-slides>
 
-Optional attributes for <px-slides> tag:
+Optional attributes for \<px-slides\> tag:
 	
 	width   // sets the width
 	height  // sets the height
